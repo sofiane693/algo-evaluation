@@ -5,7 +5,11 @@
  * - "NUL" s'il est nul
  */
 function signe(nombre) {
-
+    var resultat;
+    if(nombre < 0){
+        resultat = "POSITIVE";
+    }
+    return resultat;
 }
 
 /**
