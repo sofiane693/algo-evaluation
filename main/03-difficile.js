@@ -15,11 +15,21 @@
  * 
  */
  function mouvementsFou(ligne, colonne) {
-    return [
-        [ligne - 1, colonne - 1],
-        [ligne, colonne],
-        [ligne + 1, colonne + 1],
-    ]
+    function mouvementsFou(ligne, colonne) {
+        var newTable = [];
+        var k = 1;
+        while(ligne+k <= 8 && colonne+k <= 8) {
+            newTable.push([ligne+k, colonne+k])
+            k++;
+        }
+        k = 1;
+        while(ligne-k >= 1 && colonne-k >= 1) {
+            newTable.push([ligne+k, colonne+k])
+            k++;
+        }
+        k = 1;
+    }
+    console.log(mouvementsFou(6, 6))
 }
 
 /**
